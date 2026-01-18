@@ -4,7 +4,8 @@ import ResultsCard from '../components/ResultsCard.jsx';
 import LoadingSpinner from '../components/LoadingSpinner.jsx';
 import '../styles/App.css';
 
-const API_URL = 'https://ai-interview-preparation-tool.onrender.com/';
+const API_URL = 'https://ai-interview-prep-backend-os43.onrender.com';
+
 
 const Home = () => {
   const [questions, setQuestions] = useState(null);
