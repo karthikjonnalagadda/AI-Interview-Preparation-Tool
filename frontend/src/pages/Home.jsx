@@ -4,7 +4,7 @@ import ResultsCard from '../components/ResultsCard.jsx';
 import LoadingSpinner from '../components/LoadingSpinner.jsx';
 import '../styles/App.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://ai-interview-preparation-tool.onrender.com/';
+const API_URL = 'https://ai-interview-preparation-tool.onrender.com/';
 
 const Home = () => {
   const [questions, setQuestions] = useState(null);
@@ -17,7 +17,7 @@ const Home = () => {
     setQuestions(null);
 
     try {
-      const response = await fetch(`${API_URL}/generate-questions`, {
+      const response = await fetch(`${API_URL}/api/generate-questions`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

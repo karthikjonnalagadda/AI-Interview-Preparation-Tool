@@ -8,11 +8,8 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-  origin: config.frontendUrl,
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type'],
-}));
+app.use(cors());
+
 
 // Routes
 app.use('/api', questionsRoutes);
