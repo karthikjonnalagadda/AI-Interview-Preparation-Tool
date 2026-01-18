@@ -5,7 +5,7 @@ const openrouterClient = axios.create({
   baseURL: config.openrouter.baseUrl,
   headers: {
     'Authorization': `Bearer ${config.openrouter.apiKey}`,
-    'HTTP-Referer': 'https://github.com/yourusername/ai-interview-prep',
+    'HTTP-Referer': 'https://github.com/karthikjonnalagadda/AI-Interview-Preparation-Tool.git',
     'X-Title': 'AI Interview Preparation Tool',
   },
 });
